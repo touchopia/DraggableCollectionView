@@ -19,23 +19,9 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
     
     // Sample data for the collection view
     var items = [
-        "Consistent with words",
-        "Consistent with actions",
+        "Consistent",
         "Supportive",
-        "Active Listening",
-        "Shows empathy",
-        "Is introspective",
-        "Able to compromise",
         "Reciprocity",
-        "Repairs after conflict",
-        "Clear communication",
-        "Active Listening",
-        "Gives and takes feedback",
-        "Over familiar",
-        "Disconnected",
-        "Not thoughtful",
-        "Deflective",
-        "Isn't self-reflective",
         "Hypercritical",
         "Hostile",
         "One-sided",
@@ -108,7 +94,6 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
                         itemsForBeginning session: UIDragSession,
                         at indexPath: IndexPath) -> [UIDragItem] {
         
-        print("dragSession started")
         let item = items[indexPath.item]
         let itemProvider = NSItemProvider(object: item as NSString)
         let dragItem = UIDragItem(itemProvider: itemProvider)
