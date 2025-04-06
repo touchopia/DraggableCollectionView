@@ -10,10 +10,10 @@ import UIKit
 class ReorderableCollectionViewController: UICollectionViewController, UICollectionViewDragDelegate, UICollectionViewDropDelegate {
     
     let fontName: String = "Avenir Next Bold"
-    let fontSize: CGFloat = 16.0
+    let fontSize: CGFloat = 18.0
     let textColor: UIColor = .black
     
-    var font:UIFont {
+    var font: UIFont {
         return UIFont(name: fontName, size: fontSize)!
     }
     
@@ -23,10 +23,7 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         "Supportive",
         "Reciprocity",
         "Hypercritical",
-        "Hostile",
-        "One-sided",
-        "Lies",
-        "Controlling"
+        "Hostile"
     ]
     
     // MARK: - Lifecycle
@@ -71,8 +68,11 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CustomCell else {
             fatalError("Unable to dequeue CustomCell")
         }
-        
-        
+        setupCell(cell: cell, indexPath: indexPath)
+        return cell
+    }
+    
+    func setupCell(cell: CustomCell, indexPath: IndexPath) {
         let text = items[indexPath.item].uppercased()
         let attrString = NSMutableAttributedString(string: text)
         let attrsDict = [
@@ -82,10 +82,9 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         attrString.addAttributes(attrsDict, range: NSRange(location: 0, length: text.count))
         
         cell.label.attributedText = attrString
-        cell.label.textColor = self.textColor
-        cell.label.font = self.font
+        cell.label.textColor = textColor
+        cell.label.font = font
         cell.label.text = text
-        return cell
     }
     
     // MARK: - UICollectionViewDragDelegate
@@ -120,12 +119,6 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
                 collectionView.performBatchUpdates({
                     
                     let item = items.remove(at: sourceIndexPath.item)
-//                    // Update data source
-//                    var adjustedIndex = destinationIndexPath.item
-//                    // Adjust the destination index if the item is moved downwards
-//                    if sourceIndexPath.item < destinationIndexPath.item {
-//                        adjustedIndex -= 1
-//                    }
                     items.insert(item, at: destinationIndexPath.item)
 
                     // Update collection view
