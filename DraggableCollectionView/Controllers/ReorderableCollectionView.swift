@@ -145,4 +145,3 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         }
     }
 }
-
