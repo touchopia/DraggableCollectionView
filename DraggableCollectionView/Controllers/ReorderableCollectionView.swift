@@ -12,12 +12,13 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
     let fontName: String = "Avenir Next Bold"
     let fontSize: CGFloat = 18.0
     let textColor: UIColor = .black
+    var cellBackgroundColor: UIColor = .clear
     
     var font: UIFont {
         return UIFont(name: fontName, size: fontSize)!
     }
     
-    // Sample data for the collection view
+    // Sample data
     var items = [
         "Consistent",
         "Supportive",
@@ -31,6 +32,10 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
+    }
+    
+    func setup() {
         // Register the custom cell
         collectionView.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
         
@@ -68,6 +73,10 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CustomCell else {
             fatalError("Unable to dequeue CustomCell")
         }
+        
+        if let color = cell.contentView.backgroundColor {
+            cellBackgroundColor = color
+        }
         setupCell(cell: cell, indexPath: indexPath)
         return cell
     }
@@ -85,13 +94,13 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         cell.label.textColor = textColor
         cell.label.font = font
         cell.label.text = text
+        cell.contentView.backgroundColor = cellBackgroundColor
     }
     
     // MARK: - UICollectionViewDragDelegate
     
     func collectionView(_ collectionView: UICollectionView,
-                        itemsForBeginning session: UIDragSession,
-                        at indexPath: IndexPath) -> [UIDragItem] {
+                        itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         
         let item = items[indexPath.item]
         let itemProvider = NSItemProvider(object: item as NSString)
@@ -102,9 +111,12 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
     
     // MARK: - UICollectionViewDropDelegate
     
-    func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
+    func collectionView(_ collectionView: UICollectionView,
+                        performDropWith coordinator: UICollectionViewDropCoordinator) {
+        
         // Determine destination index path
         let destinationIndexPath: IndexPath
+        
         if let indexPath = coordinator.destinationIndexPath {
             destinationIndexPath = indexPath
         } else {

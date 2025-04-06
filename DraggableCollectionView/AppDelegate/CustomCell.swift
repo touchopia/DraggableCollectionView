@@ -9,7 +9,7 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
-    var backColor: UIColor = UIColor.random
+    var backColor: UIColor = UIColor.clear
     
     // Simple label to display item text
     let label: UILabel = {
@@ -31,7 +31,7 @@ class CustomCell: UICollectionViewCell {
     }
     
     private func setup() {
-        contentView.backgroundColor = backColor
+        contentView.backgroundColor = UIColor.random
         contentView.layer.cornerRadius = 8
         contentView.clipsToBounds = true
         
