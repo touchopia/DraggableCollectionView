@@ -2,8 +2,7 @@
 //  StringExtension.swift
 //  WordSearch
 //
-//  Created by TonyNguyen on 5/10/19.
-//  Copyright © 2019 Phuc Nguyen. All rights reserved.
+//  Created by Phil Wright on 3/10/25.
 //
 
 import UIKit
@@ -21,6 +20,9 @@ extension Int {
 }
 
 extension UIColor {
+    /// Get a random color with saturation, brightness, and alpha
+    ///
+    /// - Returns: the uicolor
     static var random: UIColor {
         return .init(hue: .random(in: 0...1), saturation: 0.5, brightness: 0.9, alpha: 1)
     }

@@ -16,8 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let layout = UICollectionViewFlowLayout()
         let collectionVC = ReorderableCollectionViewController(collectionViewLayout: layout)
-        
         let navigationController = UINavigationController(rootViewController: collectionVC)
+        
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

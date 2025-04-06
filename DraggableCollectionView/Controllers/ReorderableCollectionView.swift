@@ -117,7 +117,6 @@ class ReorderableCollectionViewController: UICollectionViewController, UICollect
         coordinator.items.forEach { dropItem in
             if let sourceIndexPath = dropItem.sourceIndexPath {
                 collectionView.performBatchUpdates({
-                    
                     let item = items.remove(at: sourceIndexPath.item)
                     items.insert(item, at: destinationIndexPath.item)
 
