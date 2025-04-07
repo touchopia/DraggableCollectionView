@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EA5530B2DA42A8C00B5AA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA553002DA42A8C00B5AA56 /* Assets.xcassets */; };
+		5E3719D12DA432D0006AB31D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719D02DA432D0006AB31D /* Models.swift */; };
+		5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */; };
+		5E3719D32DA432D0006AB31D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CF2DA432D0006AB31D /* CardView.swift */; };
+		5E3719D72DA4332B006AB31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3719D62DA4332B006AB31D /* Assets.xcassets */; };
 		5EA5530E2DA42A8C00B5AA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA553052DA42A8C00B5AA56 /* LaunchScreen.storyboard */; };
 		5EA5530F2DA42A8C00B5AA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA553072DA42A8C00B5AA56 /* Main.storyboard */; };
 		5EA553112DA42A8C00B5AA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA552F82DA42A8C00B5AA56 /* AppDelegate.swift */; };
@@ -18,11 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
+		5E3719CF2DA432D0006AB31D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5E3719D02DA432D0006AB31D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5E3719D62DA4332B006AB31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E44396F2DA164890017CDBC /* DraggableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA552F82DA42A8C00B5AA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EA552FA2DA42A8C00B5AA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5EA552FE2DA42A8C00B5AA56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		5EA553002DA42A8C00B5AA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EA553042DA42A8C00B5AA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EA553062DA42A8C00B5AA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EA553092DA42A8C00B5AA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 		5EA552FD2DA42A8C00B5AA56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */,
+				5E3719CF2DA432D0006AB31D /* CardView.swift */,
+				5E3719D02DA432D0006AB31D /* Models.swift */,
 				5EA553172DA42C2900B5AA56 /* CustomCell.swift */,
 				5EA553182DA42C2900B5AA56 /* ReorderableCollectionView.swift */,
 			);
@@ -94,7 +103,6 @@
 		5EA553032DA42A8C00B5AA56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5EA553002DA42A8C00B5AA56 /* Assets.xcassets */,
 				5EA553162DA42C1500B5AA56 /* json */,
 			);
 			path = Resources;
@@ -103,6 +111,7 @@
 		5EA553082DA42A8C00B5AA56 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				5E3719D62DA4332B006AB31D /* Assets.xcassets */,
 				5EA553052DA42A8C00B5AA56 /* LaunchScreen.storyboard */,
 				5EA553072DA42A8C00B5AA56 /* Main.storyboard */,
 			);
@@ -186,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA5530B2DA42A8C00B5AA56 /* Assets.xcassets in Resources */,
 				5EA5530E2DA42A8C00B5AA56 /* LaunchScreen.storyboard in Resources */,
 				5EA5530F2DA42A8C00B5AA56 /* Main.storyboard in Resources */,
+				5E3719D72DA4332B006AB31D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA553112DA42A8C00B5AA56 /* AppDelegate.swift in Sources */,
+				5E3719D12DA432D0006AB31D /* Models.swift in Sources */,
+				5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */,
+				5E3719D32DA432D0006AB31D /* CardView.swift in Sources */,
 				5EA553132DA42A8C00B5AA56 /* SceneDelegate.swift in Sources */,
 				5EA553192DA42C2900B5AA56 /* CustomCell.swift in Sources */,
 				5EA5531A2DA42C2900B5AA56 /* ReorderableCollectionView.swift in Sources */,
@@ -236,7 +248,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86Z976V88Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DraggableCollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -265,7 +276,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86Z976V88Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DraggableCollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -322,6 +332,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 86Z976V88Y;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -385,6 +396,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 86Z976V88Y;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;

@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let layout = UICollectionViewFlowLayout()
         let collectionVC = ReorderableCollectionView(collectionViewLayout: layout)
         let navigationController = UINavigationController(rootViewController: collectionVC)
+        navigationController.pushViewController(SwipingViewController(), animated: false)
         
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
