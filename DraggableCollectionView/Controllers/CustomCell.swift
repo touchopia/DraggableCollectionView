@@ -8,10 +8,7 @@
 import UIKit
 
 class CustomCell: UICollectionViewCell {
-    
-    var backColor: UIColor = UIColor.clear
-    
-    // Simple label to display item text
+
     let label: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +28,6 @@ class CustomCell: UICollectionViewCell {
     }
     
     private func setup() {
-        contentView.backgroundColor = UIColor.random
         contentView.layer.cornerRadius = 8
         contentView.clipsToBounds = true
         
