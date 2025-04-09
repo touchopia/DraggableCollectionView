@@ -19,6 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController(rootViewController: collectionVC)
         navigationController.pushViewController(SwipingViewController(), animated: false)
         
+        navigationController.pushViewController(InstructViewController(), animated: false)
+        
+        navigationController.pushViewController(ViewController(), animated: false)
+        
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

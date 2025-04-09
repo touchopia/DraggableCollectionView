@@ -18,15 +18,6 @@ class ReorderableCollectionView: UICollectionViewController, UICollectionViewDel
         return UIFont(name: fontName, size: fontSize)!
     }
 
-    // Sample data
-    var items = [
-        "Consistent",
-        "Supportive",
-        "Reciprocity",
-        "Hypercritical",
-        "Hostile"
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,11 +83,10 @@ class ReorderableCollectionView: UICollectionViewController, UICollectionViewDel
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 50)
+        return CGSize(width: 360, height: 60)
     }
     
     // MARK: - Reordering
-
     override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath,
                                  to destinationIndexPath: IndexPath) {
         let movedItem = items.remove(at: sourceIndexPath.item)

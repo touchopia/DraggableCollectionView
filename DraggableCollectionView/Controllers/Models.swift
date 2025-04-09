@@ -25,3 +25,26 @@ let sampleProfiles = [
     Profile(name: "Jerry", imageName: "profile10")
 ]
 
+var items = [
+    "Consistent with Words/Actions",
+    "Supportive",
+    "Reciprocity",
+    "Gives and takes feedback",
+    "Repairs after Conflict",
+    "Shows Empathy",
+    "Is Introspective",
+    "Able to compromise",
+    "Communicates",
+    "Active Listening",
+    "Over familiar",
+    "Disconnected",
+    "Deflective",
+    "Not thoughtful",
+    "Isn't self-relective",
+    "Hypercritical",
+    "Hostile",
+    "Controlling",
+    "One-Sided",
+    "Lies"
+]
+
