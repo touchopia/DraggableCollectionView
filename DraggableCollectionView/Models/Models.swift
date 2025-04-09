@@ -25,7 +25,7 @@ let sampleProfiles = [
     Profile(name: "Jerry", imageName: "profile10")
 ]
 
-var items = [
+var trusts = [
     "Consistent with Words/Actions",
     "Supportive",
     "Reciprocity",

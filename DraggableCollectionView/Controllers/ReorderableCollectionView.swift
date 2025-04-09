@@ -36,7 +36,7 @@ class ReorderableCollectionView: UICollectionViewController, UICollectionViewDel
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return trusts.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,7 +49,7 @@ class ReorderableCollectionView: UICollectionViewController, UICollectionViewDel
     }
     
     func setupCell(cell: CustomCell, indexPath: IndexPath) {
-        let text = items[indexPath.item].uppercased()
+        let text = trusts[indexPath.item].uppercased()
         let attrString = NSMutableAttributedString(string: text)
         let attrsDict = [
             NSAttributedString.Key.strikethroughStyle: 0,
@@ -89,9 +89,9 @@ class ReorderableCollectionView: UICollectionViewController, UICollectionViewDel
     // MARK: - Reordering
     override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath,
                                  to destinationIndexPath: IndexPath) {
-        let movedItem = items.remove(at: sourceIndexPath.item)
-        items.insert(movedItem, at: destinationIndexPath.item)
+        let movedItem = trusts.remove(at: sourceIndexPath.item)
+        trusts.insert(movedItem, at: destinationIndexPath.item)
         
-        print(items)
+        print(trusts)
     }
 }
