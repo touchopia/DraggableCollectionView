@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E3719D12DA432D0006AB31D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719D02DA432D0006AB31D /* Models.swift */; };
 		5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */; };
 		5E3719D32DA432D0006AB31D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CF2DA432D0006AB31D /* CardView.swift */; };
 		5E3719D72DA4332B006AB31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3719D62DA4332B006AB31D /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		5E3719CF2DA432D0006AB31D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		5E3719D02DA432D0006AB31D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5E3719D62DA4332B006AB31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E44396F2DA164890017CDBC /* DraggableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5010182DA6AFC800E811C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */,
 				5E3719CF2DA432D0006AB31D /* CardView.swift */,
 				5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */,
-				5E3719D02DA432D0006AB31D /* Models.swift */,
 				5EA553172DA42C2900B5AA56 /* CustomCell.swift */,
 				5EA553182DA42C2900B5AA56 /* ReorderableCollectionView.swift */,
 			);
@@ -218,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA553112DA42A8C00B5AA56 /* AppDelegate.swift in Sources */,
-				5E3719D12DA432D0006AB31D /* Models.swift in Sources */,
 				5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */,
 				5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */,
 				5E5010192DA6AFC800E811C0 /* ViewController.swift in Sources */,
