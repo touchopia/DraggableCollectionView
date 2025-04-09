@@ -20,6 +20,7 @@
 		5EA5531A2DA42C2900B5AA56 /* ReorderableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA553182DA42C2900B5AA56 /* ReorderableCollectionView.swift */; };
 		5EAE35502DA6B89C0040E17B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE354E2DA6B89C0040E17B /* Models.swift */; };
 		5EAE35522DA6BA9B0040E17B /* TrustCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE35512DA6BA9B0040E17B /* TrustCategories.swift */; };
+		5EAE35542DA6C0420040E17B /* boundaries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5EAE35532DA6C0420040E17B /* boundaries.csv */; };
 		5EF7BBAC2DA478C700EA53E2 /* TrustBoundaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */; };
 		5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		5EA553182DA42C2900B5AA56 /* ReorderableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderableCollectionView.swift; sourceTree = "<group>"; };
 		5EAE354E2DA6B89C0040E17B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5EAE35512DA6BA9B0040E17B /* TrustCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCategories.swift; sourceTree = "<group>"; };
+		5EAE35532DA6C0420040E17B /* boundaries.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = boundaries.csv; sourceTree = "<group>"; };
 		5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustBoundaryView.swift; sourceTree = "<group>"; };
 		5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		5EA553032DA42A8C00B5AA56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5EAE35532DA6C0420040E17B /* boundaries.csv */,
 				5EA553162DA42C1500B5AA56 /* json */,
 			);
 			path = Resources;
@@ -217,6 +220,7 @@
 			files = (
 				5EA5530E2DA42A8C00B5AA56 /* LaunchScreen.storyboard in Resources */,
 				5EA5530F2DA42A8C00B5AA56 /* Main.storyboard in Resources */,
+				5EAE35542DA6C0420040E17B /* boundaries.csv in Resources */,
 				5E3719D72DA4332B006AB31D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
