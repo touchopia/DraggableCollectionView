@@ -21,6 +21,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         navigationController.pushViewController(InstructViewController(), animated: false)
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let gameViewController = storyboard .instantiateViewController(withIdentifier: "GameVC") as! GameViewController
+        
+        navigationController.pushViewController(gameViewController, animated: false)
+        
         navigationController.pushViewController(ViewController(), animated: false)
         
         window = UIWindow(windowScene: windowScene)

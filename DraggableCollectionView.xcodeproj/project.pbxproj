@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E18E0632DA76C610047893C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E0612DA76C610047893C /* GameViewController.swift */; };
+		5E18E0642DA76C610047893C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E0622DA76C610047893C /* MainViewController.swift */; };
 		5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */; };
-		5E3719D32DA432D0006AB31D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3719CF2DA432D0006AB31D /* CardView.swift */; };
 		5E3719D72DA4332B006AB31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3719D62DA4332B006AB31D /* Assets.xcassets */; };
 		5E5010192DA6AFC800E811C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5010182DA6AFC800E811C0 /* ViewController.swift */; };
 		5EA5530E2DA42A8C00B5AA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA553052DA42A8C00B5AA56 /* LaunchScreen.storyboard */; };
@@ -24,11 +25,19 @@
 		5EAE35562DA6C1080040E17B /* Boundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE35552DA6C1020040E17B /* Boundaries.swift */; };
 		5EF7BBAC2DA478C700EA53E2 /* TrustBoundaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */; };
 		5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */; };
+		5EF85BDA2DA854E300A9DA5B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD52DA854E300A9DA5B /* Line.swift */; };
+		5EF85BDB2DA854E300A9DA5B /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD22DA854E300A9DA5B /* GridCollectionViewCell.swift */; };
+		5EF85BDC2DA854E300A9DA5B /* WordGridGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD72DA854E300A9DA5B /* WordGridGenerator.swift */; };
+		5EF85BDD2DA854E300A9DA5B /* WordListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */; };
+		5EF85BDF2DA854E300A9DA5B /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD32DA854E300A9DA5B /* WordCollectionViewCell.swift */; };
+		5EF85BE22DA855E400A9DA5B /* LinesOverlay 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */; };
+		5EF85BE32DA855E400A9DA5B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BE02DA855E400A9DA5B /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E18E0612DA76C610047893C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5E18E0622DA76C610047893C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
-		5E3719CF2DA432D0006AB31D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5E3719D62DA4332B006AB31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E44396F2DA164890017CDBC /* DraggableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5010182DA6AFC800E811C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +55,13 @@
 		5EAE35552DA6C1020040E17B /* Boundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boundaries.swift; sourceTree = "<group>"; };
 		5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustBoundaryView.swift; sourceTree = "<group>"; };
 		5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructViewController.swift; sourceTree = "<group>"; };
+		5EF85BD22DA854E300A9DA5B /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		5EF85BD32DA854E300A9DA5B /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
+		5EF85BD52DA854E300A9DA5B /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		5EF85BD72DA854E300A9DA5B /* WordGridGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGridGenerator.swift; sourceTree = "<group>"; };
+		5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCollectionView.swift; sourceTree = "<group>"; };
+		5EF85BE02DA855E400A9DA5B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinesOverlay 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,9 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				5E5010182DA6AFC800E811C0 /* ViewController.swift */,
+				5E18E0612DA76C610047893C /* GameViewController.swift */,
+				5E18E0622DA76C610047893C /* MainViewController.swift */,
 				5E3719CE2DA432D0006AB31D /* SwipingViewController.swift */,
 				5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */,
-				5E3719CF2DA432D0006AB31D /* CardView.swift */,
 				5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */,
 				5EA553172DA42C2900B5AA56 /* CustomCell.swift */,
 				5EA553182DA42C2900B5AA56 /* ReorderableCollectionView.swift */,
@@ -136,12 +153,13 @@
 		5EA5530A2DA42A8C00B5AA56 /* DraggableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5EF85BD92DA854E300A9DA5B /* Views */,
 				5EA552FB2DA42A8C00B5AA56 /* AppDelegate */,
 				5EA552FD2DA42A8C00B5AA56 /* Controllers */,
 				5EAE354F2DA6B89C0040E17B /* Models */,
 				5EA552FF2DA42A8C00B5AA56 /* Extensions */,
-				5EA553032DA42A8C00B5AA56 /* Resources */,
 				5EA553082DA42A8C00B5AA56 /* Storyboards */,
+				5EA553032DA42A8C00B5AA56 /* Resources */,
 				5EA553092DA42A8C00B5AA56 /* Info.plist */,
 			);
 			path = DraggableCollectionView;
@@ -155,6 +173,28 @@
 				5EAE354E2DA6B89C0040E17B /* Models.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5EF85BD42DA854E300A9DA5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5EF85BD22DA854E300A9DA5B /* GridCollectionViewCell.swift */,
+				5EF85BD32DA854E300A9DA5B /* WordCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5EF85BD92DA854E300A9DA5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EF85BD42DA854E300A9DA5B /* Cells */,
+				5EF85BD52DA854E300A9DA5B /* Line.swift */,
+				5EF85BD72DA854E300A9DA5B /* WordGridGenerator.swift */,
+				5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */,
+				5EF85BE02DA855E400A9DA5B /* CardView.swift */,
+				5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +281,21 @@
 				5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */,
 				5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */,
 				5EAE35522DA6BA9B0040E17B /* TrustCategories.swift in Sources */,
+				5EF85BDA2DA854E300A9DA5B /* Line.swift in Sources */,
+				5EF85BDB2DA854E300A9DA5B /* GridCollectionViewCell.swift in Sources */,
+				5EF85BE22DA855E400A9DA5B /* LinesOverlay 2.swift in Sources */,
+				5EF85BE32DA855E400A9DA5B /* CardView.swift in Sources */,
+				5EF85BDC2DA854E300A9DA5B /* WordGridGenerator.swift in Sources */,
+				5EF85BDD2DA854E300A9DA5B /* WordListCollectionView.swift in Sources */,
+				5EF85BDF2DA854E300A9DA5B /* WordCollectionViewCell.swift in Sources */,
 				5E5010192DA6AFC800E811C0 /* ViewController.swift in Sources */,
 				5EF7BBAC2DA478C700EA53E2 /* TrustBoundaryView.swift in Sources */,
-				5E3719D32DA432D0006AB31D /* CardView.swift in Sources */,
 				5EA553132DA42A8C00B5AA56 /* SceneDelegate.swift in Sources */,
 				5EA553192DA42C2900B5AA56 /* CustomCell.swift in Sources */,
 				5EA5531A2DA42C2900B5AA56 /* ReorderableCollectionView.swift in Sources */,
 				5EA553152DA42A8C00B5AA56 /* Extensions.swift in Sources */,
+				5E18E0632DA76C610047893C /* GameViewController.swift in Sources */,
+				5E18E0642DA76C610047893C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

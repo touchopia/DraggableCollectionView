@@ -11,6 +11,8 @@ class CardView: UIView {
     
     private let imageView = UIImageView()
     private let nameLabel = UILabel()
+    private let fontName: String = "Avenir Next Medium"
+    private let fontSize: CGFloat = 26.0
     
     init(profile: Profile) {
         super.init(frame: .zero)
@@ -23,18 +25,21 @@ class CardView: UIView {
     }
 
     private func setupView(profile: Profile) {
-        backgroundColor = .white
-        layer.cornerRadius = 10
+        backgroundColor = .clear
+        layer.cornerRadius = 30
         clipsToBounds = true
         
         imageView.image = UIImage(named: profile.imageName)
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         
-        nameLabel.text = profile.name
-        nameLabel.font = .boldSystemFont(ofSize: 24)
+        nameLabel.text = profile.name.uppercased()
+        nameLabel.font = UIFont(name: fontName, size: fontSize)!
+        
+        
         nameLabel.textAlignment = .center
-        nameLabel.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        nameLabel.backgroundColor = UIColor.random.withAlphaComponent(1)
+        nameLabel.textColor = .white
         
         addSubview(imageView)
         addSubview(nameLabel)
