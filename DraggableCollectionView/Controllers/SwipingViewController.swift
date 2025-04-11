@@ -20,7 +20,8 @@ class SwipingViewController: UIViewController {
     private func setupProfiles() {
         for (index, profile) in sampleProfiles.reversed().enumerated() {
             let card = CardView(profile: profile)
-            card.frame = CGRect(x: 20, y: 100, width: view.frame.width - 40, height: 400)
+            card.frame = CGRect(x: 20, y: 100,
+                                width: view.frame.width - 40, height: 400)
             card.tag = index
             view.addSubview(card)
             profileViews.append(card)

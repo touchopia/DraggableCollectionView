@@ -26,7 +26,7 @@ class CardView: UIView {
 
     private func setupView(profile: Profile) {
         backgroundColor = .clear
-        layer.cornerRadius = 30
+        layer.cornerRadius = 15
         clipsToBounds = true
         
         imageView.image = UIImage(named: profile.imageName)

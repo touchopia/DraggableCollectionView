@@ -23,6 +23,7 @@
 		5EAE35522DA6BA9B0040E17B /* TrustCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE35512DA6BA9B0040E17B /* TrustCategories.swift */; };
 		5EAE35542DA6C0420040E17B /* boundaries.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5EAE35532DA6C0420040E17B /* boundaries.csv */; };
 		5EAE35562DA6C1080040E17B /* Boundaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAE35552DA6C1020040E17B /* Boundaries.swift */; };
+		5EDD096A2DA9904100FACCF4 /* TrustCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD09692DA9903D00FACCF4 /* TrustCard.swift */; };
 		5EF7BBAC2DA478C700EA53E2 /* TrustBoundaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */; };
 		5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */; };
 		5EF85BDA2DA854E300A9DA5B /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD52DA854E300A9DA5B /* Line.swift */; };
@@ -53,6 +54,7 @@
 		5EAE35512DA6BA9B0040E17B /* TrustCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCategories.swift; sourceTree = "<group>"; };
 		5EAE35532DA6C0420040E17B /* boundaries.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = boundaries.csv; sourceTree = "<group>"; };
 		5EAE35552DA6C1020040E17B /* Boundaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boundaries.swift; sourceTree = "<group>"; };
+		5EDD09692DA9903D00FACCF4 /* TrustCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCard.swift; sourceTree = "<group>"; };
 		5EF7BBAB2DA478C400EA53E2 /* TrustBoundaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustBoundaryView.swift; sourceTree = "<group>"; };
 		5EF7BBAD2DA4793D00EA53E2 /* InstructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructViewController.swift; sourceTree = "<group>"; };
 		5EF85BD22DA854E300A9DA5B /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5EAE35512DA6BA9B0040E17B /* TrustCategories.swift */,
+				5EDD09692DA9903D00FACCF4 /* TrustCard.swift */,
 				5EAE35552DA6C1020040E17B /* Boundaries.swift */,
 				5EAE354E2DA6B89C0040E17B /* Models.swift */,
 			);
@@ -277,6 +280,7 @@
 			files = (
 				5EAE35502DA6B89C0040E17B /* Models.swift in Sources */,
 				5EA553112DA42A8C00B5AA56 /* AppDelegate.swift in Sources */,
+				5EDD096A2DA9904100FACCF4 /* TrustCard.swift in Sources */,
 				5EAE35562DA6C1080040E17B /* Boundaries.swift in Sources */,
 				5EF7BBAE2DA4793D00EA53E2 /* InstructViewController.swift in Sources */,
 				5E3719D22DA432D0006AB31D /* SwipingViewController.swift in Sources */,
