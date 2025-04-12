@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        playButton.layer.cornerRadius = playButton.frame.height / 2
-        playButton.layer.masksToBounds = true
+        //playButton.layer.cornerRadius = playButton.frame.height / 2
+       // playButton.layer.masksToBounds = true
     }
 
     @IBAction func play(_ sender: Any) {

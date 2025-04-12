@@ -8,20 +8,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DraggableCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="DraggableCollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdK-Al-5Fu">
+                                <rect key="frame" x="159" y="433.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vdK-Al-5Fu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xrp-6S-7L9"/>
+                            <constraint firstItem="vdK-Al-5Fu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mAS-gf-lKF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="vdK-Al-5Fu" id="4LT-li-NRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="148"/>
+            <point key="canvasLocation" x="-166" y="223"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tql-4W-akw">
