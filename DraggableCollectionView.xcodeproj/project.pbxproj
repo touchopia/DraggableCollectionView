@@ -32,7 +32,7 @@
 		5EF85BDD2DA854E300A9DA5B /* WordListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */; };
 		5EF85BDF2DA854E300A9DA5B /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BD32DA854E300A9DA5B /* WordCollectionViewCell.swift */; };
 		5EF85BE22DA855E400A9DA5B /* LinesOverlay 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */; };
-		5EF85BE32DA855E400A9DA5B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BE02DA855E400A9DA5B /* CardView.swift */; };
+		5EF85BE32DA855E400A9DA5B /* TrustCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF85BE02DA855E400A9DA5B /* TrustCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 		5EF85BD52DA854E300A9DA5B /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		5EF85BD72DA854E300A9DA5B /* WordGridGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGridGenerator.swift; sourceTree = "<group>"; };
 		5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCollectionView.swift; sourceTree = "<group>"; };
-		5EF85BE02DA855E400A9DA5B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5EF85BE02DA855E400A9DA5B /* TrustCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustCardView.swift; sourceTree = "<group>"; };
 		5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinesOverlay 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,7 +194,7 @@
 				5EF85BD52DA854E300A9DA5B /* Line.swift */,
 				5EF85BD72DA854E300A9DA5B /* WordGridGenerator.swift */,
 				5EF85BD82DA854E300A9DA5B /* WordListCollectionView.swift */,
-				5EF85BE02DA855E400A9DA5B /* CardView.swift */,
+				5EF85BE02DA855E400A9DA5B /* TrustCardView.swift */,
 				5EF85BE12DA855E400A9DA5B /* LinesOverlay 2.swift */,
 			);
 			path = Views;
@@ -288,7 +288,7 @@
 				5EF85BDA2DA854E300A9DA5B /* Line.swift in Sources */,
 				5EF85BDB2DA854E300A9DA5B /* GridCollectionViewCell.swift in Sources */,
 				5EF85BE22DA855E400A9DA5B /* LinesOverlay 2.swift in Sources */,
-				5EF85BE32DA855E400A9DA5B /* CardView.swift in Sources */,
+				5EF85BE32DA855E400A9DA5B /* TrustCardView.swift in Sources */,
 				5EF85BDC2DA854E300A9DA5B /* WordGridGenerator.swift in Sources */,
 				5EF85BDD2DA854E300A9DA5B /* WordListCollectionView.swift in Sources */,
 				5EF85BDF2DA854E300A9DA5B /* WordCollectionViewCell.swift in Sources */,

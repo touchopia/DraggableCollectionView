@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardView: UIView {
+class TrustCardView: UIView {
     
     private let imageView = UIImageView()
     private let nameLabel = UILabel()

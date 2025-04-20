@@ -71,16 +71,21 @@ class GameViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // Because there's no layout constraint for a CALayer.
-        gradientLayer.frame = gridCollectionView.bounds
+        //gradientLayer.frame = gridCollectionView.bounds
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupWordListCollectionView()
-        setupGridCollectionView()
-        setupOverlayView()
-        loadGame()
+        self.view.backgroundColor = UIColor.random
+       //preloadGame()
     }
+    
+//    override func loadView() {
+//        setupWordListCollectionView()
+//        setupGridCollectionView()
+//        setupOverlayView()
+//        loadGame()
+//    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

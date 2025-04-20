@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -28,6 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         mainVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
 
         let gameVC = GameViewController() // Game
+        let gnavigationController =
+        UINavigationController(rootViewController: gameVC)
+        
         gameVC.tabBarItem = UITabBarItem(title: "Game", image: UIImage(systemName: "gamecontroller"), tag: 1)
 
         let instructVC = InstructViewController() // Instructions
@@ -38,7 +39,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Embed in navigation controllers
         let mainNav = UINavigationController(rootViewController: mainVC)
-        let gameNav = UINavigationController(rootViewController: gameVC)
+        
+        let words = gameVC.gridGenerator.words
+        
+        print(words)
+        
+        let gameNav = gnavigationController
         let instructNav = UINavigationController(rootViewController: instructVC)
         let swipingNav = UINavigationController(rootViewController: swipingVC)
 
